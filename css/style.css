@@ -1,5 +1,6 @@
 :root{
     --fundo-principal: #1D252C; 
+    --fundo-secundario: rgba(29, 37, 44, 0.466);
     --neutra1: #B7C5D3;
     --primaria1: #008B94; 
     --primaria2: #33CED8;
@@ -39,14 +40,17 @@ main{
     height: 300px;
     display: grid;
 }
-.itens{
-    background-color: var(--primaria1);
-    width: 300px;
-    height: 300px;
+.add-item:hover{
+    background-color: var(--neutra1);
 }
 .fa-solid{
     font-size: 50px;
     align-self: center;
     justify-self: center;
-
+    color: var(--primaria2);
+}
+.itens{
+    background-color: var(--primaria1);
+    width: 300px;
+    height: 300px;
 }
