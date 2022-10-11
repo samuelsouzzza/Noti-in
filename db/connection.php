@@ -5,10 +5,11 @@
     $user = "root";
     $password= "";
 
-    $pdo = new PDO("mysql:host=$hostname;dbname=$dbname", "$user", "$password"); 
+    $connect = mysqli_connect($hostname, $user, $password, $dbname);
+
     
     
-    // if($pdo){
+    // if($connect){
     //     echo "Conexão bem-sucedida";
     // }else{
     //     echo "Problema na conexão.";

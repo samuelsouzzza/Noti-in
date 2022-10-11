@@ -25,9 +25,9 @@
     <section class="modal-wrapper">
         <article class="modal-box">
             <button class="btn-fechar-modal"><i class="fa-solid fa-xmark"></i></button>
-            <form>
-                <input type="text" class="txt-titulo" placeholder="Título">
-                <textarea type="text" class="txt-descricao" placeholder="Suas notas"></textarea>
+            <form action="php/inserirNotas.php" method="post">
+                <input name="txt-title" type="text" class="txt-titulo" placeholder="Título" autocomplete="off">
+                <textarea name="txt-descricao" type="text" class="txt-descricao" placeholder="Suas notas"></textarea>
                 <div class="box-acoes-modal">
                     <button type="submit" class="btn-save-modal"><i class="fa-solid fa-floppy-disk"></i></button>
                 </div>
