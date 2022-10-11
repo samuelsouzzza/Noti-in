@@ -2,6 +2,7 @@
     --fundo-principal: #1D252C; 
     --fundo-secundario: #424547;
     --neutra1: #B7C5D3;
+    --neutra2: #686969;
     --primaria1: #008B94; 
     --primaria2: #33CED8;
     --primaria3: #68A1F0;
@@ -16,6 +17,7 @@
     margin:0;
     box-sizing: border-box;
     user-select: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body{
     background-color: var(--fundo-principal);
@@ -47,7 +49,7 @@ main{
 .add-item:hover{
     background-color: var(--fundo-secundario);
 }
-.fa-solid{
+.fa-plus{
     font-size: 50px;
     align-self: center;
     justify-self: center;
@@ -55,7 +57,14 @@ main{
 }
 .itens{
     background-color: var(--primaria1);
+    color: var(--neutra1);
+    padding: 3%;
+    text-align: right;
 }
 .itens:hover{
     background-color: var(--primaria2);
+    color: var(--neutra2);
+}
+.itens h1{
+    margin: 5% 0 5% 5%;
 }
