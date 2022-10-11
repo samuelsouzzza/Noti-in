@@ -60,7 +60,6 @@ main{
     font-size: 20px;
     padding: 5%;
     text-align: right;
-    box-shadow: 3px 1px 5px var(--fundo-secundario);
     display: flex;
     flex-direction: column;
 }
