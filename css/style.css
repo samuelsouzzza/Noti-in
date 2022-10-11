@@ -25,17 +25,16 @@ body{
 main{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 250px;
+    grid-auto-rows: minmax(250px, 300px);
     gap: 10px;
     align-items:center;
     justify-items: center;   
-    position: absolute;
+    position: relative;
     border: 1px solid var(--neutra1);
     width: 80%;
     height: auto;
-    margin: 0% 50%;
+    margin: 5% auto;
     padding: 15px;
-    transform: translate(-50%, 50%);
 }
 .add-item, .itens{
     width: 100%;
@@ -58,13 +57,27 @@ main{
 .itens{
     background-color: var(--primaria1);
     color: var(--neutra1);
-    padding: 3%;
+    font-size: 20px;
+    padding: 5%;
     text-align: right;
+    box-shadow: 3px 1px 5px var(--fundo-secundario);
+    display: flex;
+    flex-direction: column;
 }
 .itens:hover{
     background-color: var(--primaria2);
     color: var(--neutra2);
 }
-.itens h1{
-    margin: 5% 0 5% 5%;
+.itens-acoes{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    gap: 5px;
+    margin: 2%;
+}
+.fa-trash:hover{
+    color: var(--validacao2);
+}
+.fa-pencil:hover{
+    color:var(--terciaria1);
 }
