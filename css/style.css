@@ -1,5 +1,6 @@
 :root{
     --fundo-principal: #1D252C; 
+    --fundo-principal-opaco: #1d252cd0;
     --fundo-secundario: #424547;
     --neutra1: #B7C5D3;
     --neutra2: #686969;
@@ -79,4 +80,12 @@ main{
 }
 .fa-pencil:hover{
     color:var(--terciaria1);
+}
+.modal-wrapper{
+    background-color: var(--fundo-principal-opaco);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
 }
