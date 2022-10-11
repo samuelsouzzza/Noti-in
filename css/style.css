@@ -4,6 +4,7 @@
     --fundo-secundario: #424547;
     --neutra1: #B7C5D3;
     --neutra2: #686969;
+    --neutra3: #b7c5d379;
     --primaria1: #008B94; 
     --primaria2: #33CED8;
     --primaria3: #68A1F0;
@@ -149,7 +150,7 @@ main{
     min-height: 30px;
     font-size: 30px;
     color: var(--neutra1);
-    border: 1px solid var(--neutra1);
+    border: 1px solid var(--neutra3);
     transition: 0.5s;
 }
 .btn-save-modal:hover{
