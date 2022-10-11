@@ -131,4 +131,24 @@ main{
 }
 .btn-fechar-modal:hover{
     color: var(--validacao2);
+    border: 1px solid var(--validacao2);
+}
+.box-acoes-modal{
+    width: 350px;
+    margin: 10px;
+    display: flex;
+    justify-content: end;
+}
+.btn-save-modal{
+    background-color: transparent;
+    min-width: 100px;
+    min-height: 30px;
+    font-size: 30px;
+    color: var(--neutra1);
+    border: 1px solid var(--neutra1);
+    transition: 0.5s;
+}
+.btn-save-modal:hover{
+    border: 1px solid var(--validacao1);
+    color: var(--validacao1);
 }
