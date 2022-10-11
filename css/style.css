@@ -1,5 +1,28 @@
+:root{
+    --fundo-principal: #1D252C; 
+    --neutra1: #B7C5D3;
+    --primaria1: #008B94; 
+    --primaria2: #33CED8;
+    --primaria3: #68A1F0;
+    --secundaria1: #DA70D6;
+    --secundaria2: #FFD70D;
+    --terciaria1: #A68C66;
+    --validacao1: #8BD199;
+    --validacao2: #E27E78;
+}
 *{
     padding:0;
     margin:0;
     box-sizing: border-box;
+}
+body{
+    background-color: var(--fundo-principal);
+}
+main{
+    position: absolute;
+    border: 1px solid var(--neutra1);
+    width: 80%;
+    height: 50%;
+    margin: 20% 50%;
+    transform: translate(-50%, -50%);
 }
