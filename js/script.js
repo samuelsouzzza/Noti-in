@@ -1,7 +1,8 @@
 const btnCriar = document.querySelector('.add-item');
 
-function criarItem(){
-    alert('Modal para criação de itens.');
+function criarNota(){
+    const modal = document.querySelector('.modal-wrapper');
+    modal.classList.toggle('ativo');
 }
 
-btnCriar.addEventListener('click', criarItem);
+btnCriar.addEventListener('click', criarNota);

@@ -83,6 +83,9 @@ main{
     color:var(--terciaria1);
 }
 .modal-wrapper{
+    display: none;
+}
+.modal-wrapper.ativo{
     background-color: var(--fundo-principal-opaco);
     position: fixed;
     display: flex;
@@ -103,6 +106,7 @@ main{
     justify-content: center;
     padding: 20px;
     position: relative;
+    animation: fade-modal 1s;
 }
 .txt-titulo, .txt-descricao{
     min-width: 350px;
@@ -151,4 +155,12 @@ main{
 .btn-save-modal:hover{
     border: 1px solid var(--validacao1);
     color: var(--validacao1);
+}
+@keyframes fade-modal{
+    from{
+        transform: translate3d(0,-60px,0);
+    }
+    to{
+        transform: translate3d(0,0,0);
+    }
 }
