@@ -4,15 +4,19 @@ const btnFecharModal = document.querySelector('.btn-fechar-modal');
 const txtTit = document.querySelector('.txt-titulo');
 const txtDesc = document.querySelector('.txt-descricao');
 const btnUpdate = document.querySelector('.btn-atualizar');
-let lblcount = document.querySelector('.lbl-count');
+const lblcount = document.querySelector('.lbl-count');
+lblcount.textContent = 0;
 
 function modalOnOff(){
     modal.classList.toggle('ativo');
     txtDesc.value = "";
     txtTit.value = "";
+    lblcount.textContent = 0;
 }
 function contador(){
-    let n = txtDesc.value.length;
+        let n = 1;
+        n += txtDesc.value.length;
+        lblcount.textContent = n;
 }
 
 btnCriar.addEventListener('click', modalOnOff);

@@ -53,7 +53,7 @@ ul li{
     list-style: none;
 }
 .menu-stats{
-    margin: 0 5% 0px 5%;
+    margin: 0 5% 5% 5%;
     color: var(--neutra1);
     font-size: 15px;
     display: flex;
@@ -222,7 +222,7 @@ footer{
     background-color:var(--fundo-principal);
     border-top: 1px solid var(--neutra1);
     color: var(--neutra1);
-    position: absolute;
+    position: relative;
     text-align: center;
     padding: 30px;
     bottom: 0%;

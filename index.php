@@ -58,9 +58,9 @@ include('db/connection.php');
             <button class="btn-fechar-modal"><i class="fa-solid fa-xmark"></i></button>
             <form action="php/inserirNotas.php" method="post">
                 <input name="txt-titulo" class="txt-titulo" type="text"  placeholder="Título" autocomplete="off" maxlength="16">
-                <textarea name="txt-descricao" type="text" class="txt-descricao" placeholder="Suas notas" maxlength="250"></textarea>
+                <textarea name="txt-descricao" type="text" class="txt-descricao" placeholder="Suas notas" maxlength="200"></textarea>
                 <div class="counter-box">
-                    <p><label class="lbl-count"></label>/150</p>
+                    <p><label class="lbl-count"></label>/200</p>
                 </div>
                 <div class="box-acoes-modal">
                     <button type="submit" class="btn-save-modal"><i class="fa-solid fa-floppy-disk"></i></button>
