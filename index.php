@@ -27,7 +27,7 @@ include('db/connection.php');
         ?>
         <div class="itens">
             <div class="itens-acoes">
-                <a href="php/deleteItem.php"><i class="fa-solid fa-trash"></i></a>
+                <a href="php/deleteItem.php?del_id_nota=<?php echo $row[0];?>"><i class="fa-solid fa-trash"></i></a>
                 <i class="fa-solid fa-pencil"></i>
             </div>
             <h1><?php echo $row[1];?></h1>
