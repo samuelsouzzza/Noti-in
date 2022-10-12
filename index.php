@@ -13,9 +13,18 @@ include('db/connection.php');
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
-        <title>Bloco de notas</title>
+        <title>Suas Notas</title>
     </head>
 <body>
+    <header>
+        <div>
+            <img src="ico/bloco-de-anotacoes.png" alt="Logo-principal">
+            <h1>Suas Notas</h1>
+        </div>
+        <ul>
+            <li><a href="https://github.com/samuelsouzzza/bloco-de-notas.git" target="blank">Documentação no GitHub</a></li>
+        </ul>
+    </header>
     <main>
         <div class="add-item">
             <i class="fa-solid fa-plus"></i>
@@ -44,7 +53,7 @@ include('db/connection.php');
             <button class="btn-fechar-modal"><i class="fa-solid fa-xmark"></i></button>
             <form action="php/inserirNotas.php" method="post">
                 <input name="txt-titulo" class="txt-titulo" type="text"  placeholder="Título" autocomplete="off" maxlength="16">
-                <textarea name="txt-descricao" type="text" class="txt-descricao" placeholder="Suas notas" maxlength="50"></textarea>
+                <textarea name="txt-descricao" type="text" class="txt-descricao" placeholder="Suas notas" maxlength="250"></textarea>
                 <div class="box-acoes-modal">
                     <button type="submit" class="btn-save-modal"><i class="fa-solid fa-floppy-disk"></i></button>
                 </div>
