@@ -1,7 +1,7 @@
 <?php
 include('../db/connection.php');
 
-$txtTitulo = $_POST['txt-title'];
+$txtTitulo = $_POST['txt-titulo'];
 $txtDesc = $_POST['txt-descricao'];
 
 $query = "INSERT INTO anotacoes (titulo_notas, descricao_notas) VALUES ('$txtTitulo', '$txtDesc');";

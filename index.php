@@ -42,7 +42,7 @@ include('db/connection.php');
         <article class="modal-box">
             <button class="btn-fechar-modal"><i class="fa-solid fa-xmark"></i></button>
             <form action="php/inserirNotas.php" method="post">
-                <input name="txt-title" type="text" class="txt-titulo" placeholder="Título" autocomplete="off">
+                <input name="txt-titulo" class="txt-titulo" type="text"  placeholder="Título" autocomplete="off" maxlength="16">
                 <textarea name="txt-descricao" type="text" class="txt-descricao" placeholder="Suas notas"></textarea>
                 <div class="box-acoes-modal">
                     <button type="submit" class="btn-save-modal"><i class="fa-solid fa-floppy-disk"></i></button>
