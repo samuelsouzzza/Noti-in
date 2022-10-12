@@ -1,3 +1,9 @@
+const dataAtual = new Data();
+const anoAtual = dataAtual.getFullYear(); 
+alert(anoAtual);
+
+
+
 const btnCriar = document.querySelector('.add-item');
 const modal = document.querySelector('.modal-wrapper');
 const btnFecharModal = document.querySelector('.btn-fechar-modal');

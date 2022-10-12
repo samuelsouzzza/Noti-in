@@ -29,19 +29,22 @@ include('db/connection.php');
         <div class="itens">
             <div class="itens-acoes">
                 <a href="php/deleteItem.php?del_id_nota=<?php echo $row[0];?>"><i class="fa-solid fa-trash"></i></a>
-                <a class="btn-atualizar" href="php/atualizarItem.php?up_nota_id=<?php echo $row[0];?>?up_nota_titulo=<?php echo $row[1];?>?up_nota_descricao=<?php echo $row[2];?>"><i class="fa-solid fa-pencil"></i></a>
+                <a class="btn-atualizar" href="php/atualizarItem.php?up_nota_id=<?php echo $row[0];?>?up_nota_titulo=<?php echo '$row[1]';?>?up_nota_descricao=<?php echo '$row[2]';?>"><i class="fa-solid fa-pencil"></i></a>
             </div>
             <h1><?php echo $row[1];?></h1>
             <p><?php echo $row[2];?></p>
         </div>
         <?php } ?>
     </main>
+    <footer>
+        <p>Alguns Direitos Reservados</p><?php echo date('Y');?>
+    </footer>
     <section class="modal-wrapper" >
         <article class="modal-box">
             <button class="btn-fechar-modal"><i class="fa-solid fa-xmark"></i></button>
             <form action="php/inserirNotas.php" method="post">
                 <input name="txt-titulo" class="txt-titulo" type="text"  placeholder="Título" autocomplete="off" maxlength="16">
-                <textarea name="txt-descricao" type="text" class="txt-descricao" placeholder="Suas notas"></textarea>
+                <textarea name="txt-descricao" type="text" class="txt-descricao" placeholder="Suas notas" maxlength="50"></textarea>
                 <div class="box-acoes-modal">
                     <button type="submit" class="btn-save-modal"><i class="fa-solid fa-floppy-disk"></i></button>
                 </div>

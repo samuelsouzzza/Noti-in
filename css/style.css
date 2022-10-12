@@ -178,6 +178,17 @@ body::-webkit-scrollbar-thumb, .txt-descricao::-webkit-scrollbar-thumb{
     border: 1px solid var(--validacao1);
     color: var(--validacao1);
 }
+footer{
+    width: 100%;
+    height: 50px;
+    background-color:var(--fundo-principal);
+    border-top: 1px solid var(--neutra1);
+    color: var(--neutra1);
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    bottom: 0%;
+}
 @keyframes fadein-modal-box{
     from{
         transform: translate3d(0,-60px,0);
