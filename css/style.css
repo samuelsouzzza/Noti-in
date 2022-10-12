@@ -30,7 +30,7 @@ a{
 a, a:visited{
     color:unset;
 }
-a:hover{
+header a:hover{
     color: var(--primaria2);
     border-left: 1px solid var(--primaria2);
 }
@@ -206,7 +206,7 @@ footer{
     background-color:var(--fundo-principal);
     border-top: 1px solid var(--neutra1);
     color: var(--neutra1);
-    position: relative;
+    position: absolute;
     text-align: center;
     padding: 30px;
     bottom: 0%;
