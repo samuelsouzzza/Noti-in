@@ -85,6 +85,9 @@ main{
 .add-item:hover{
     background-color: var(--fundo-secundario);
 }
+.add-item:active{
+    transform: scale(0.95);
+}
 .fa-plus{
     font-size: 50px;
     align-self: center;
