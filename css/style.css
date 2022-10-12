@@ -85,10 +85,10 @@ main{
     margin: 2%;
 }
 .fa-trash:hover{
-    color: var(--validacao2);
+    color:var(--validacao2) ;
 }
 .fa-pencil:hover{
-    color:var(--terciaria1);
+    color: var(--primaria3);
 }
 .modal-wrapper{
     display: none;

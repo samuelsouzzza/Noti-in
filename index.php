@@ -29,16 +29,14 @@ include('db/connection.php');
         <div class="itens">
             <div class="itens-acoes">
                 <a href="php/deleteItem.php?del_id_nota=<?php echo $row[0];?>"><i class="fa-solid fa-trash"></i></a>
-                <i class="fa-solid fa-pencil"></i>
+                <a class="btn-atualizar" href="php/atualizarItem.php?up_nota_id=<?php echo $row[0];?>?up_nota_titulo=<?php echo $row[1];?>?up_nota_descricao=<?php echo $row[2];?>"><i class="fa-solid fa-pencil"></i></a>
             </div>
             <h1><?php echo $row[1];?></h1>
             <p><?php echo $row[2];?></p>
         </div>
-        <?php
-            }
-        ?>
+        <?php } ?>
     </main>
-    <section class="modal-wrapper">
+    <section class="modal-wrapper" >
         <article class="modal-box">
             <button class="btn-fechar-modal"><i class="fa-solid fa-xmark"></i></button>
             <form action="php/inserirNotas.php" method="post">
