@@ -25,9 +25,10 @@
 body{
     background-color: var(--fundo-principal);
 }
+
 main{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, min(300px));
     grid-auto-rows: minmax(250px, 300px);
     gap: 10px;
     align-items:center;
@@ -110,6 +111,9 @@ main{
     animation: fade-modal 1s;
 }
 .txt-titulo, .txt-descricao{
+    background-color: var(--fundo-principal);
+    border: 1px solid var(--neutra1);
+    color: var(--neutra1);
     min-width: 350px;
     height: 50px;
     display: block;
@@ -121,6 +125,13 @@ main{
     min-height: 250px;
     resize: none;
 }
+.txt-descricao::-webkit-scrollbar {   
+    background-color: var(--fundo-principal);   
+}  
+.txt-descricao::-webkit-scrollbar-thumb{
+    background-color: var(--neutra1);
+    border-radius: 10px;
+} 
 .btn-fechar-modal{
     position: absolute;
     top: -25px;
