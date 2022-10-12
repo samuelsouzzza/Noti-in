@@ -28,11 +28,6 @@ include('db/connection.php');
             <li><a href="https://github.com/samuelsouzzza/bloco-de-notas.git" target="blank">Documentação no GitHub</a></li>
         </ul>
     </header>
-    <section class="menu-stats">
-        <div>
-            <p>Número de anotações: <?php echo $qtd;?></p>
-        </div>
-    </section>
     <main>
         <div class="add-item">
             <i class="fa-solid fa-plus"></i>
@@ -50,6 +45,11 @@ include('db/connection.php');
         </div>
         <?php } ?>
     </main>
+    <section class="menu-stats">
+        <div>
+            <p>Número de anotações: <?php echo $qtd;?></p>
+        </div>
+    </section>
     <footer>
         <p>Alguns Direitos Reservados</p><?php echo date('Y');?>
     </footer>

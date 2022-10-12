@@ -53,7 +53,7 @@ ul li{
     list-style: none;
 }
 .menu-stats{
-    margin: 3% 5% 0px 5%;
+    margin: 0 5% 0px 5%;
     color: var(--neutra1);
     font-size: 15px;
     display: flex;
@@ -70,7 +70,7 @@ main{
     border: 1px solid var(--neutra1);
     width: auto;
     height: auto;
-    margin: 2% 5%;
+    margin: 5% 5% 1% 5%;
     padding: 15px;
 }
 .add-item, .itens{
