@@ -16,24 +16,23 @@ include('db/connection.php');
         <div class="add-item">
             <i class="fa-solid fa-plus"></i>
         </div>
+        <?php
+            $line = "SELECT * FROM anotacoes;";
+            $query = mysqli_query($connect, $line);
+           
+            while($row = mysqli_fetch_array($query)){
+        ?>
         <div class="itens">
             <div class="itens-acoes">
                 <i class="fa-solid fa-trash"></i>
                 <i class="fa-solid fa-pencil"></i>
             </div>
-            <?php
-            $query = "SELECT * FROM anotacoes;";
-            $row = mysqli_query($connect, $query);
-            
-            $i = 0;
-            while($array <= mysqli_fetch_array($row)){
-                echo $array['titulo_notas'];
-                
-            }
-            ?>
-            <h1>Título</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, qui incidunt, perferendis placeat tempora maxime nihil est excepturi</p>
+            <h1><?php echo $row[1];?></h1>
+            <p><?php echo $row[2];?></p>
         </div>
+        <?php
+            }
+        ?>
     </main>
     <section class="modal-wrapper">
         <article class="modal-box">
