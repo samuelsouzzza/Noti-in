@@ -1,5 +1,8 @@
 <?php
 include('db/connection.php');
+    $line = "SELECT * FROM anotacoes;";
+    $query = mysqli_query($connect, $line);
+    $qtd = mysqli_num_rows($query);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -25,14 +28,16 @@ include('db/connection.php');
             <li><a href="https://github.com/samuelsouzzza/bloco-de-notas.git" target="blank">Documentação no GitHub</a></li>
         </ul>
     </header>
+    <section class="menu-stats">
+        <div>
+            <p>Número de anotações: <?php echo $qtd;?></p>
+        </div>
+    </section>
     <main>
         <div class="add-item">
             <i class="fa-solid fa-plus"></i>
         </div>
         <?php
-            $line = "SELECT * FROM anotacoes;";
-            $query = mysqli_query($connect, $line);
-           
             while($row = mysqli_fetch_array($query)){
         ?>
         <div class="itens">
