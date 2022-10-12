@@ -28,16 +28,16 @@ body{
 
 main{
     display: grid;
-    grid-template-columns: repeat(4, min(300px));
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
     grid-auto-rows: minmax(250px, 300px);
     gap: 10px;
     align-items:center;
     justify-items: center;   
     position: relative;
     border: 1px solid var(--neutra1);
-    width: 80%;
+    width: auto;
     height: auto;
-    margin: 5% auto;
+    margin: 5% 5%;
     padding: 15px;
 }
 .add-item, .itens{
@@ -125,10 +125,10 @@ main{
     min-height: 250px;
     resize: none;
 }
-.txt-descricao::-webkit-scrollbar {   
+body::-webkit-scrollbar,.txt-descricao::-webkit-scrollbar {   
     background-color: var(--fundo-principal);   
 }  
-.txt-descricao::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb, .txt-descricao::-webkit-scrollbar-thumb{
     background-color: var(--neutra1);
     border-radius: 10px;
 } 
@@ -174,5 +174,20 @@ main{
     }
     to{
         transform: translate3d(0,0,0);
+    }
+}
+@media screen and (max-width: 1280px){
+    main{
+        grid-template-columns: repeat(3, minmax(auto, 1fr));
+    }
+}
+@media screen and (max-width: 920px){
+    main{
+        grid-template-columns: repeat(2, minmax(auto, 1fr));
+    }
+}
+@media screen and (max-width: 500px){
+    main{
+        grid-template-columns: repeat(1, minmax(auto, 1fr));
     }
 }
