@@ -9,4 +9,4 @@ function modalOnOff(){
 }
 
 btnCriar.addEventListener('click', modalOnOff);
-btnFecharModal.addEventListener('click', modalOnOff)
+btnFecharModal.addEventListener('click', modalOnOff);

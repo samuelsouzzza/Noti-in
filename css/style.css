@@ -21,6 +21,10 @@
     box-sizing: border-box;
     user-select: none;
     font-family: Ubuntu;
+    text-decoration: none;
+}
+a, a:visited{
+    color:unset;
 }
 body{
     background-color: var(--fundo-principal);
