@@ -145,10 +145,10 @@ main{
 .fa-pencil:hover{
     color: var(--primaria3);
 }
-.modal-wrapper{
+.modal-wrapper, .modal-wrapper-update{
     display: none;
 }
-.modal-wrapper.ativo{
+.modal-wrapper.ativo, .modal-wrapper-update.ativo{
     background-color: var(--fundo-principal-opaco);
     position: fixed;
     display: flex;
@@ -172,7 +172,7 @@ main{
     position: relative;
     animation: fadein-modal-box 3s;
 }
-.txt-titulo, .txt-descricao{
+.txt-titulo, .txt-descricao, .txt-id{
     background-color: var(--fundo-principal);
     border: 1px solid var(--neutra1);
     color: var(--neutra1);
@@ -198,7 +198,7 @@ body::-webkit-scrollbar-thumb, .txt-descricao::-webkit-scrollbar-thumb{
     background-color: var(--neutra1);
     border-radius: 10px;
 } 
-.btn-fechar-modal{
+.btn-fechar-modal, .btn-fechar-modal-update{
     position: absolute;
     top: -25px;
     left: 93%;
@@ -211,7 +211,7 @@ body::-webkit-scrollbar-thumb, .txt-descricao::-webkit-scrollbar-thumb{
     color:var(--neutra1);
     transition: 0.5s;
 }
-.btn-fechar-modal:hover{
+.btn-fechar-modal:hover, .btn-fechar-modal-update:hover{
     color: var(--validacao2);
     border: 1px solid var(--validacao2);
 }
