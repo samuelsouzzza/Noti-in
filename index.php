@@ -11,22 +11,26 @@ include('db/connection.php');
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="imgs/ico/favicon.ico" type="image/x-icon">
         <!-- <a href="https://www.flaticon.com/br/icones-gratis/nota" title="nota ícones">Nota ícones criados por Freepik - Flaticon</a> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
-        <title>Suas Notas</title>
+        <title>Notiin</title>
     </head>
 <body>
     <header>
         <div>
-            <img src="ico/bloco-de-anotacoes.png" alt="Logo-principal">
-            <h1>Suas Notas</h1>
+            <img src="imgs/ico/bloco-de-anotacoes.png" alt="Logo-principal">
+            <h1>Notiin</h1>
         </div>
+        <div>
         <ul>
             <li><a href="https://github.com/samuelsouzzza/bloco-de-notas.git" target="blank"><i class="fa fa-github"></i> Documentação no GitHub</a></li>
         </ul>
+        <img src="imgs/Perfil.jpg" class="img-perfil" alt="foto-de-perfil">
+        </div>
+        
     </header>
     <main>
         <div class="add-item">
