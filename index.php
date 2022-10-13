@@ -1,6 +1,6 @@
 <?php
 include('db/connection.php');
-    $line = "SELECT * FROM anotacoes ORDER BY id_notas DESC;";
+    $line = "SELECT id_notas, titulo_notas, descricao_notas, DATE_FORMAT(data_notas, '%d/%m/%y') AS data_notas_formatada, DATE_FORMAT(hora_notas, '%h:%i') AS hora_notas_formatada FROM anotacoes ORDER BY id_notas DESC;";
     $query = mysqli_query($connect, $line);
     $qtd = mysqli_num_rows($query);
 ?>
@@ -25,7 +25,7 @@ include('db/connection.php');
             <h1>Suas Notas</h1>
         </div>
         <ul>
-            <li><a href="https://github.com/samuelsouzzza/bloco-de-notas.git" target="blank">Documentação no GitHub</a></li>
+            <li><a href="https://github.com/samuelsouzzza/bloco-de-notas.git" target="blank"><i class="fa fa-github"></i> Documentação no GitHub</a></li>
         </ul>
     </header>
     <main>
