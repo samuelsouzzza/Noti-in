@@ -51,7 +51,8 @@ header div{
     align-items: center;
 }
 header div+div{
-    min-width: 300px;
+    max-width: 350px;
+    width: 300px;
     justify-content: end;
 }
 ul li{
@@ -80,7 +81,7 @@ main{
     border: 1px solid var(--neutra1);
     width: auto;
     height: auto;
-    margin: 5% 5% 1% 5%;
+    margin: 5% 5% 2% 5%;
     padding: 15px;
 }
 .add-item, .itens{
@@ -114,6 +115,7 @@ main{
     flex-direction: column;
     word-break:keep-all;
     height: 100%;
+    transition: 0.5s;
 }
 .itens:hover{
     background-color: var(--primaria2);
@@ -133,6 +135,9 @@ main{
     align-items: end;
     gap: 5px;
     margin: 2%;
+}
+.fa-trash, .fa-pencil{
+    transition: 0.5s;
 }
 .fa-trash:hover{
     color:var(--validacao2) ;
@@ -281,4 +286,11 @@ footer{
     main{
         grid-template-columns: repeat(1, minmax(auto, 1fr));
     }
+    header ul li{
+        display:none;
+    }
+    header div+div{
+        max-width: 150px;
+    }
+    
 }
