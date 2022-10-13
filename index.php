@@ -1,6 +1,6 @@
 <?php
 include('db/connection.php');
-    $line = "SELECT id_notas, titulo_notas, descricao_notas, DATE_FORMAT(data_notas, '%d/%m/%y') AS data_notas_formatada, DATE_FORMAT(hora_notas, '%h:%i') AS hora_notas_formatada FROM anotacoes ORDER BY id_notas DESC;";
+    $line = "SELECT id_notas, titulo_notas, descricao_notas, DATE_FORMAT(data_notas, '%d/%m/%y') AS data_notas_formatada, DATE_FORMAT(hora_notas, '%h:%i %p') AS hora_notas_formatada FROM anotacoes ORDER BY id_notas DESC;";
     $query = mysqli_query($connect, $line);
     $qtd = mysqli_num_rows($query);
 ?>
