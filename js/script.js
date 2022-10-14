@@ -5,8 +5,9 @@ const btnFecharModal = document.querySelector('.btn-fechar-modal');
 const btnFecharModalUp = document.querySelector('.btn-fechar-modal-update');
 const txtTit = document.querySelector('.txt-titulo');
 const txtDesc = document.querySelector('.txt-descricao');
-const btnUpdate = document.querySelector('.btn-atualizar');
+const btnUpdate = document.querySelectorAll('.btn-atualizar');
 const lblcount = document.querySelector('.lbl-count');
+
 lblcount.textContent = 0;
 
 function modalOnOff(){
@@ -17,6 +18,7 @@ function modalOnOff(){
 }
 function modalUpOnOff(){
     modalUpdate.classList.toggle('ativo');
+    lblcount.textContent = 0;
 }
 function contador(){
         let n = 1;
@@ -25,7 +27,8 @@ function contador(){
 }
 btnCriar.addEventListener('click', modalOnOff);
 btnFecharModal.addEventListener('click', modalOnOff);
-btnUpdate.addEventListener('click', modalUpOnOff);
 txtDesc.addEventListener('keypress', contador);
 btnFecharModalUp.addEventListener('click', modalUpOnOff);
-
+btnUpdate.forEach((c)=>{
+    c.addEventListener('click', modalUpOnOff);
+});
