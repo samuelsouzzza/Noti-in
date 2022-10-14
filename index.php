@@ -16,13 +16,13 @@ include('db/connection.php');
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
-        <title>Notiin</title>
+        <title>Noti-in</title>
     </head>
 <body>
     <header>
         <div>
             <img src="imgs/ico/bloco-de-anotacoes.png" alt="Logo-principal">
-            <h1>Notiin</h1>
+            <h1><?php echo $_SERVER['PHP_SELF']; ?></h1>
         </div>
         <div>
         <ul>
@@ -36,13 +36,13 @@ include('db/connection.php');
             <i class="fa-solid fa-plus"></i>
         </div>
         <?php
-            while($row = mysqli_fetch_array($query,  MYSQLI_NUM)){
+            while($row = mysqli_fetch_array($query)){
         ?>
         <div class="itens">
             <div class="itens-header">
                 <div class="itens-acoes">
                     <a href="php/deleteItem.php?del_id_nota=<?php echo $row[0];?>"><i class="fa-solid fa-trash"></i></a>
-                    <a class="btn-atualizar"><i class="fa-solid fa-pencil"></i></a>
+                    <a href="<?php $_SERVER['PHP_SELF'];?>?id=<?php echo $row[0];?>" class="btn-atualizar"><i class="fa-solid fa-pencil"></i></a>
                 </div>
                 <div class="itens-data"><?php echo $row[3];?> • <?php echo $row[4];?></div>
             </div>
@@ -56,9 +56,6 @@ include('db/connection.php');
             <p>Número de anotações: <?php echo $qtd;?></p>
         </div>
     </section>
-    <footer>
-        <p>Alguns Direitos Reservados</p><?php echo date('Y');?>
-    </footer>
     <section class="modal-wrapper" >
         <article class="modal-box">
             <button class="btn-fechar-modal"><i class="fa-solid fa-xmark"></i></button>
@@ -90,6 +87,9 @@ include('db/connection.php');
             </form>
         </article>
     </section>
+    <footer>
+        <p>Alguns Direitos Reservados</p><?php echo date('Y');?>
+    </footer>
 <script src="js/script.js"></script>
 <script src="https://kit.fontawesome.com/33170ddcd4.js" crossorigin="anonymous"></script>
 </body>

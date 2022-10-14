@@ -17,10 +17,10 @@ function modalOnOff(){
     lblcount.textContent = 0;
 }
 function modalUpOnOff(){
-    modalUpdate.classList.toggle('ativo');
-    lblcount.textContent = 0;
-    txtTit.value = "";
-    txtDesc.value = "";
+        modalUpdate.classList.toggle('ativo');
+        lblcount.textContent = 0;
+        txtTit.value = "";
+        txtDesc.value = "";
 }
 function contador(){
         let n = 1;
