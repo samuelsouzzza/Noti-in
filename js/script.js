@@ -19,6 +19,8 @@ function modalOnOff(){
 function modalUpOnOff(){
     modalUpdate.classList.toggle('ativo');
     lblcount.textContent = 0;
+    txtTit.value = "";
+    txtDesc.value = "";
 }
 function contador(){
         let n = 1;
@@ -27,7 +29,9 @@ function contador(){
 }
 btnCriar.addEventListener('click', modalOnOff);
 btnFecharModal.addEventListener('click', modalOnOff);
+
 txtDesc.addEventListener('keypress', contador);
+
 btnFecharModalUp.addEventListener('click', modalUpOnOff);
 btnUpdate.forEach((c)=>{
     c.addEventListener('click', modalUpOnOff);

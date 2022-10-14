@@ -36,13 +36,13 @@ include('db/connection.php');
             <i class="fa-solid fa-plus"></i>
         </div>
         <?php
-            while($row = mysqli_fetch_array($query)){
+            while($row = mysqli_fetch_array($query,  MYSQLI_NUM)){
         ?>
         <div class="itens">
             <div class="itens-header">
                 <div class="itens-acoes">
                     <a href="php/deleteItem.php?del_id_nota=<?php echo $row[0];?>"><i class="fa-solid fa-trash"></i></a>
-                    <a href="#section-update?id_upd=<?php echo $row[0];?>" class="btn-atualizar"><i class="fa-solid fa-pencil"></i></a>
+                    <a class="btn-atualizar"><i class="fa-solid fa-pencil"></i></a>
                 </div>
                 <div class="itens-data"><?php echo $row[3];?> • <?php echo $row[4];?></div>
             </div>
@@ -78,7 +78,7 @@ include('db/connection.php');
         <article class="modal-box">
             <button class="btn-fechar-modal-update"><i class="fa-solid fa-xmark"></i></button>
             <form action="php/at.php" method="post">
-                <input type="number" class="txt-id" disabled value="">
+                <input type="number" class="txt-id" disabled value="<?php echo $row[0]?>">
                 <input name="txt-titulo" class="txt-titulo" type="text"  placeholder="Título" autocomplete="off" maxlength="16">
                 <textarea name="txt-descricao" type="text" class="txt-descricao" placeholder="Suas notas" maxlength="150" autofocus="on"></textarea>
                 <div class="counter-box">
