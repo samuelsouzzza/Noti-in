@@ -42,10 +42,7 @@ const imgPerfil = document.querySelector('.img-perfil');
 const menuSuspenso = document.querySelector('.menu-suspenso');
 function showMenu(){
    function closeMenu(e){
-      console.log(e.target);
-      if(e.target !== '.menu-suspenso'){
-         menuSuspenso.classList.remove('ativo');
-      }
+      if(!menuSuspenso.contains(e.target))menuSuspenso.classList.remove('ativo');
    }
    window.addEventListener('click', closeMenu);
    menuSuspenso.classList.add('ativo');
