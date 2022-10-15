@@ -53,7 +53,7 @@ ul li{
     list-style:none;
     margin: 5% 0;
 }
-li i{
+ i{
    margin-right: 2%;
 }
 .menu-suspenso{
@@ -73,17 +73,25 @@ li i{
    right: 6%;
    animation: showMenuSuspenso .5s forwards;
 }
-.btn-logout{
+hr{
+   border-top: 1px solid var(--neutra2) 0 0 0;
+
+}
+.btn-logout, .btn-options{
    background-color: var(--fundo-principal);
-   border: 1px solid var(--neutra2);
-   color: var(--neutra2);
+   border: 1px solid var(--validacao2);
+   color: var(--validacao2);
    padding: 3%;
    min-width: 100%;
    transition: .5s;
 }
-.btn-logout:hover{
+.btn-logout:hover, .btn-options:hover{
    background-color: var(--neutra1);
    color: var(--fundo-principal);
+}
+.btn-options{
+   border: 1px solid var(--neutra3);
+   color: var(--neutra3);
 }
 .img-perfil{
    position: relative;

@@ -29,9 +29,12 @@ include('db/connection.php');
                <ul>
                   <li><a href="#"><i class="fa-solid fa-user"></i> @samuelsouzzza</a></li>
                   <li><a href="#"><i class="fa-solid fa-envelope"></i> rssamuel17@gmail.com</a></li>
-                  <li><button class="btn-logout">Sair</button></li>
-                  <hr>
+                  <li><a href="#"><i class="fa-solid fa-palette"></i>Tema</a></li>
                   <li><a href="https://github.com/samuelsouzzza/bloco-de-notas.git" target="blank"><i class="fa fa-github"></i> Abrir no GitHub</a></li>
+                  <hr>
+                  <li><button class="btn-options">Opções</button></li>
+                  <li><button class="btn-logout">Sair</button></li>
+                  
                </ul>
             </div>
             <img src="imgs/Perfil.jpg" class="img-perfil" alt="foto-de-perfil">
