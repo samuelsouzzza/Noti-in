@@ -20,7 +20,7 @@ include('db/connection.php');
     </head>
 <body>
     <header>
-        <div>
+        <div class="logo-wrapper">
             <img src="imgs/ico/bloco-de-anotacoes.png" alt="Logo-principal">
             <h1>Noti-in</h1>
         </div>
@@ -81,7 +81,7 @@ include('db/connection.php');
         <article class="modal-box">
             <button class="btn-fechar-modal-update"><i class="fa-solid fa-xmark"></i></button>
             <form action="php/at.php" method="post">
-                <input type="number" class="txt-id" disabled value="<?php echo $row[0]?>">
+                <input type="number" class="txt-id" disabled value="">
                 <input name="txt-titulo" class="txt-titulo" type="text"  placeholder="Título" autocomplete="off" maxlength="16">
                 <textarea name="txt-descricao" type="text" class="txt-descricao" placeholder="Suas notas" maxlength="150" autofocus="on"></textarea>
                 <div class="counter-box">

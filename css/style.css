@@ -45,8 +45,8 @@ header{
     padding: 20px 5%;
     border-bottom: 1px solid var(--neutra3);
 }
-header div{
-    display: inline;
+header .logo-wrapper{
+    display: flex;
     align-items: center;
 }
 ul li{
@@ -57,16 +57,21 @@ li i{
    margin-right: 2%;
 }
 .menu-suspenso{
+   display: none;
+}
+.menu-suspenso.ativo{
+   display: block;
    background-color: var(--fundo-principal);
-   border: 1px solid var(--neutra1);
+   border: 1px solid var(--primaria2);
    min-width: 250px;
    word-wrap: break-word;
    height: auto;
    position: absolute;
    padding: 1%;
    z-index: 3;
-   top: 11%;
+   top: 9%;
    right: 6%;
+   animation: showMenuSuspenso .5s forwards;
 }
 .btn-logout{
    background-color: var(--fundo-principal);
@@ -74,16 +79,21 @@ li i{
    color: var(--neutra2);
    padding: 3%;
    min-width: 100%;
+   transition: .5s;
+}
+.btn-logout:hover{
+   background-color: var(--neutra1);
+   color: var(--fundo-principal);
 }
 .img-perfil{
    position: relative;
    z-index: 4;
-    max-width: 32px;
-    max-height: 32px;
-    border-radius: 50%;
-    border: 1px solid var(--neutra1);
-    margin-left: 5%;
-    transition: 0.5s;
+   max-width: 32px;
+   max-height: 32px;
+   border-radius: 50%;
+   border: 1px solid var(--neutra1);
+   margin-left: 5%;
+   transition: 0.5s;
 }
 .img-perfil:hover{
     border: 1px solid var(--primaria2);
@@ -290,6 +300,16 @@ footer{
     to{
         transform: translate3d(0,0,0);
     }
+}
+@keyframes showMenuSuspenso{
+   from{
+      opacity: 0;
+      transform: translate3d(0,-10px,0);
+   }
+   to{
+      opacity: 1;
+      transform: translate3d(0,0,0);
+   }
 }
 @media screen and (max-width: 1280px){
     main{

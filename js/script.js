@@ -1,38 +1,53 @@
 const btnCriar = document.querySelector('.add-item');
 const modal = document.querySelector('.modal-wrapper');
-const modalUpdate = document.querySelector('.modal-wrapper-update')
 const btnFecharModal = document.querySelector('.btn-fechar-modal');
-const btnFecharModalUp = document.querySelector('.btn-fechar-modal-update');
-const txtTit = document.querySelector('.txt-titulo');
-const txtDesc = document.querySelector('.txt-descricao');
-const btnUpdate = document.querySelectorAll('.btn-atualizar');
-const lblcount = document.querySelector('.lbl-count');
-
-lblcount.textContent = 0;
-
 function modalOnOff(){
-    modal.classList.toggle('ativo');
-    txtTit.value = "";
-    txtDesc.value = "";
-    lblcount.textContent = 0;
-}
-function modalUpOnOff(){
-        modalUpdate.classList.toggle('ativo');
-        lblcount.textContent = 0;
-        txtTit.value = "";
-        txtDesc.value = "";
-}
-function contador(){
-        let n = 1;
-        n += txtDesc.value.length;
-        lblcount.textContent = n;
+   modal.classList.toggle('ativo');
+   txtTit.value = "";
+   txtDesc.value = "";
+   lblcount.textContent = 0;
 }
 btnCriar.addEventListener('click', modalOnOff);
 btnFecharModal.addEventListener('click', modalOnOff);
 
+
+const lblcount = document.querySelector('.lbl-count');
+const txtTit = document.querySelector('.txt-titulo');
+const txtDesc = document.querySelector('.txt-descricao');
+lblcount.textContent = 0;
+function contador(){
+   let n = 1;
+   n += txtDesc.value.length;
+   lblcount.textContent = n;
+}
 txtDesc.addEventListener('keypress', contador);
 
+
+const modalUpdate = document.querySelector('.modal-wrapper-update');
+const btnUpdate = document.querySelectorAll('.btn-atualizar');
+const btnFecharModalUp = document.querySelector('.btn-fechar-modal-update');
+function modalUpOnOff(){
+   modalUpdate.classList.toggle('ativo');
+   lblcount.textContent = 0;
+   txtTit.value = "";
+   txtDesc.value = "";
+}
 btnFecharModalUp.addEventListener('click', modalUpOnOff);
 btnUpdate.forEach((c)=>{
     c.addEventListener('click', modalUpOnOff);
 });
+
+
+const imgPerfil = document.querySelector('.img-perfil');
+const menuSuspenso = document.querySelector('.menu-suspenso');
+function showMenu(){
+   function closeMenu(e){
+      console.log(e.target);
+      if(e.target !== '.menu-suspenso'){
+         menuSuspenso.classList.remove('ativo');
+      }
+   }
+   window.addEventListener('click', closeMenu);
+   menuSuspenso.classList.add('ativo');
+}
+imgPerfil.addEventListener('mouseover', showMenu);
