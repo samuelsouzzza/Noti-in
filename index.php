@@ -22,13 +22,19 @@ include('db/connection.php');
     <header>
         <div>
             <img src="imgs/ico/bloco-de-anotacoes.png" alt="Logo-principal">
-            <h1><?php echo $_SERVER['PHP_SELF']; ?></h1>
+            <h1>Noti-in</h1>
         </div>
         <div>
-        <ul>
-            <li><a href="https://github.com/samuelsouzzza/bloco-de-notas.git" target="blank"><i class="fa fa-github"></i> Documentação no GitHub</a></li>
-        </ul>
-        <img src="imgs/Perfil.jpg" class="img-perfil" alt="foto-de-perfil">
+            <div class="menu-suspenso">
+               <ul>
+                  <li><a href="#"><i class="fa-solid fa-user"></i> @samuelsouzzza</a></li>
+                  <li><a href="#"><i class="fa-solid fa-envelope"></i> rssamuel17@gmail.com</a></li>
+                  <li><button class="btn-logout">Sair</button></li>
+                  <hr>
+                  <li><a href="https://github.com/samuelsouzzza/bloco-de-notas.git" target="blank"><i class="fa fa-github"></i> Abrir no GitHub</a></li>
+               </ul>
+            </div>
+            <img src="imgs/Perfil.jpg" class="img-perfil" alt="foto-de-perfil">
         </div>
     </header>
     <main>

@@ -36,7 +36,6 @@ a, a:visited{
 }
 header a:hover{
     color: var(--primaria2);
-    border-left: 1px solid var(--primaria2);
 }
 header{
     display: flex;
@@ -47,18 +46,38 @@ header{
     border-bottom: 1px solid var(--neutra3);
 }
 header div{
-    display: inline-flex;
+    display: inline;
     align-items: center;
-}
-header div+div{
-    max-width: 350px;
-    width: 300px;
-    justify-content: end;
 }
 ul li{
     list-style:none;
+    margin: 5% 0;
+}
+li i{
+   margin-right: 2%;
+}
+.menu-suspenso{
+   background-color: var(--fundo-principal);
+   border: 1px solid var(--neutra1);
+   min-width: 250px;
+   word-wrap: break-word;
+   height: auto;
+   position: absolute;
+   padding: 1%;
+   z-index: 3;
+   top: 11%;
+   right: 6%;
+}
+.btn-logout{
+   background-color: var(--fundo-principal);
+   border: 1px solid var(--neutra2);
+   color: var(--neutra2);
+   padding: 3%;
+   min-width: 100%;
 }
 .img-perfil{
+   position: relative;
+   z-index: 4;
     max-width: 32px;
     max-height: 32px;
     border-radius: 50%;
