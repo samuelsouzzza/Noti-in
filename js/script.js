@@ -48,3 +48,10 @@ function showMenu(){
    menuSuspenso.classList.add('ativo');
 }
 imgPerfil.addEventListener('mouseover', showMenu);
+
+
+const changeTheme = document.querySelector('change-theme');
+function mudarTema(){
+   changeTheme.textContent = 'Aplicar Tema Escuro';
+}
+changeTheme.addEventListener('click', mudarTema);

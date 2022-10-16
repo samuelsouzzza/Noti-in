@@ -29,7 +29,7 @@ include('db/connection.php');
                <ul>
                   <li><a href="#"><i class="fa-solid fa-user"></i> @samuelsouzzza</a></li>
                   <li><a href="#"><i class="fa-solid fa-envelope"></i> rssamuel17@gmail.com</a></li>
-                  <li><a href="#"><i class="fa-solid fa-palette"></i>Tema</a></li>
+                  <li><a href="#" class="change-theme"><i class="fa-solid fa-palette"></i> Aplicar Tema Claro</a></li>
                   <li><a href="https://github.com/samuelsouzzza/bloco-de-notas.git" target="blank"><i class="fa fa-github"></i> Abrir no GitHub</a></li>
                   <hr>
                   <li><button class="btn-options">Opções</button></li>
