@@ -50,8 +50,8 @@ function showMenu(){
 imgPerfil.addEventListener('mouseover', showMenu);
 
 
-const changeTheme = document.querySelector('change-theme');
+const changeTheme = document.querySelector('#change-theme');
 function mudarTema(){
-   changeTheme.textContent = 'Aplicar Tema Escuro';
+   document.body.style.backgroundColor= 'red';
 }
 changeTheme.addEventListener('click', mudarTema);
