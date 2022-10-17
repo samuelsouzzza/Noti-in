@@ -22,12 +22,12 @@ USE `minhasnotas`;
 -- Copiando estrutura para tabela minhasnotas.anotacoes
 CREATE TABLE IF NOT EXISTS `anotacoes` (
   `id_notas` int(3) NOT NULL AUTO_INCREMENT,
-  `titulo_notas` varchar(25) NOT NULL,
-  `descricao_notas` varchar(150) NOT NULL,
+  `titulo_notas` varchar(25) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `descricao_notas` varchar(150) COLLATE utf8mb4_unicode_ci NOT NULL,
   `data_notas` date NOT NULL,
   `hora_notas` time NOT NULL,
   PRIMARY KEY (`id_notas`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Copiando dados para a tabela minhasnotas.anotacoes: ~1 rows (aproximadamente)
 INSERT INTO `anotacoes` (`id_notas`, `titulo_notas`, `descricao_notas`, `data_notas`, `hora_notas`) VALUES

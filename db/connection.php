@@ -7,11 +7,5 @@
 
     $connect = mysqli_connect($hostname, $user, $password, $dbname);
 
-    
-    
-    // if($connect){
-    //     echo "Conexão bem-sucedida";
-    // }else{
-    //     echo "Problema na conexão.";
-    // }
+    if(!$connect) echo "Houve um problema com a conexão com o banco de dados.";
 ?>
