@@ -34,7 +34,6 @@ include('db/connection.php');
                   <hr>
                   <li><button class="btn-options">Opções</button></li>
                   <li><button class="btn-logout">Sair</button></li>
-                  
                </ul>
             </div>
             <img src="imgs/Perfil.jpg" class="img-perfil" alt="foto-de-perfil">
