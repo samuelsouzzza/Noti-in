@@ -210,7 +210,7 @@ main{
     position: relative;
     animation: fadein-modal-box 3s;
 }
-.txt-titulo, .txt-descricao, .txt-id, .txt-titulo-update, .txt-descricao-update{
+.txt-titulo, .txt-descricao, .txt-id-update, .txt-titulo-update, .txt-descricao-update{
     display: block;
     background-color: var(--fundo-principal);
     border: 1px solid var(--neutra1);
@@ -225,6 +225,11 @@ main{
 .txt-descricao, .txt-descricao-update{
     resize: none;
     min-height: 250px;
+}
+.txt-id-update{
+    cursor: not-allowed;
+    user-select: none;
+    text-indent:-9999px;
 }
 .txt-titulo:focus, .txt-descricao:focus{
     border: 1px dashed var(--primaria2);

@@ -53,7 +53,7 @@ include('db/connection.php');
                     <a href="php/delete.php?del_id_nota=<?php echo $row[0];?>"><i class="fa-solid fa-trash"></i></a>
                     <a class="btn-atualizar"><i class="fa-solid fa-pencil"></i></a>
                 </div>
-                <div class="itens-data"><?php echo $row[3];?> • <?php echo $row[4];?></div>
+                <div class="itens-data"><?php echo $row[3];?> • <?php echo $row[4];?> • <?php echo $row[0];?></div>
             </div>
             <h1><?php echo $row[1];?></h1>
             <p><?php echo $row[2];?></p>
@@ -62,7 +62,7 @@ include('db/connection.php');
             <article class="modal-box">
                 <button class="btn-fechar-modal-update"><i class="fa-solid fa-xmark"></i></button>
                 <form action="php/update.php" method="post">
-                    <input name="txt-id-update" type="text" class="txt-id" disabled value="<?php echo $row[0];?>">
+                    <input name="txt-id-update" type="hidden" class="txt-id-update" value="<?php echo $row[0];?>">
                     <input name="txt-titulo-update" class="txt-titulo-update" type="text" placeholder="Título" autocomplete="off" maxlength="16" value="<?php echo $row[1];?>">
                     <textarea name="txt-descricao-update" type="text" class="txt-descricao-update" placeholder="Suas notas" maxlength="150" autofocus="on"><?php echo $row[2];?></textarea>
                     <div class="counter-box">
