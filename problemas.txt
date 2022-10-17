@@ -1,0 +1,2 @@
+• id esta sobreescrevendo no editar
+• n ta puxando o titulo e descricao no editar

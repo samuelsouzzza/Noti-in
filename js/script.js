@@ -26,8 +26,7 @@ txtDesc.addEventListener('keypress', contador);
 const modalUpdate = document.querySelector('.modal-wrapper-update');
 const btnUpdate = document.querySelectorAll('.btn-atualizar');
 const btnFecharModalUp = document.querySelector('.btn-fechar-modal-update');
-function modalUpOnOff(e){
-   e.preventDefault();
+function modalUpOnOff(){
    modalUpdate.classList.toggle('ativo');
    lblcount.textContent = 0;
    txtTit.value = "";
