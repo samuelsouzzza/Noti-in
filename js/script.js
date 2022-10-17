@@ -50,11 +50,8 @@ imgPerfil.addEventListener('mouseover', showMenu);
 
 const changeTheme = document.querySelector('#change-theme');
 function mudarTema(){
-   // const fundoPrincipal = getComputedStyle(document.documentElement).getPropertyValue('--fundo-principal');
-   document.body.style.setProperty('--fundo-principal', '#B7C5D3');
-   document.body.style.setProperty('--fundo-principal-opaco', '#B7C5D3D0');
-   document.body.style.setProperty('--fundo-principal-secundario', '#424547');
-   document.body.style.setProperty('--neutra1', '#1D252C');
-   
+   const root = document.querySelector(':root');
+   root.classList.toggle('light');
+   root.classList.toggle('dark');
 }
 changeTheme.addEventListener('click', mudarTema);

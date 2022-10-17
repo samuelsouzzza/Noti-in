@@ -5,7 +5,7 @@ include('db/connection.php');
     $qtd = mysqli_num_rows($query);
 ?>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="dark">
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
