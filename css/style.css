@@ -210,19 +210,19 @@ main{
     position: relative;
     animation: fadein-modal-box 3s;
 }
-.txt-titulo, .txt-descricao, .txt-id{
+.txt-titulo, .txt-descricao, .txt-id, .txt-titulo-update, .txt-descricao-update{
+    display: block;
     background-color: var(--fundo-principal);
     border: 1px solid var(--neutra1);
     color: var(--neutra1);
     width: auto;
     min-width: 400px;
     height: 50px;
-    display: block;
     font-size: 25px;
     padding: 10px;
     margin: 10px;
 }
-.txt-descricao{
+.txt-descricao, .txt-descricao-update{
     resize: none;
     min-height: 250px;
 }

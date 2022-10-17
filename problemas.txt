@@ -1,2 +1,6 @@
 • id esta sobreescrevendo no editar
-• n ta puxando o titulo e descricao no editar
+• n ta puxando pelo id certo no editar
+• o id do editar ta quebrado
+
+
+// $line = "UPDATE anotacoes SET titulo_notas = '$novoTitulo', descricao_notas = '$novaDescricao', data_notas = '$dataAtual', hora_notas = '$horaAtual' WHERE id_notas = $id;";

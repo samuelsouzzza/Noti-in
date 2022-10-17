@@ -62,9 +62,9 @@ include('db/connection.php');
             <article class="modal-box">
                 <button class="btn-fechar-modal-update"><i class="fa-solid fa-xmark"></i></button>
                 <form action="php/update.php" method="post">
-                    <input name="txt-id-update" type="text" class="txt-id" value="<?php echo $row[0];?>">
-                    <input name="txt-titulo-update" class="txt-titulo" type="text"  placeholder="Título" autocomplete="off" maxlength="16" value="<?php echo $row[1];?>">
-                    <textarea name="txt-descricao-update" type="text" class="txt-descricao" placeholder="Suas notas" maxlength="150" autofocus="on" value="<?php echo $row[2];?>"></textarea>
+                    <input name="txt-id-update" type="text" class="txt-id" disabled value="<?php echo $row[0];?>">
+                    <input name="txt-titulo-update" class="txt-titulo-update" type="text" placeholder="Título" autocomplete="off" maxlength="16" value="<?php echo $row[1];?>">
+                    <textarea name="txt-descricao-update" type="text" class="txt-descricao-update" placeholder="Suas notas" maxlength="150" autofocus="on"><?php echo $row[2];?></textarea>
                     <div class="counter-box">
                         <p><label class="lbl-count"></label>/150</p>
                     </div>

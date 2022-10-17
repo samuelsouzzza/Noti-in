@@ -29,8 +29,6 @@ const btnFecharModalUp = document.querySelector('.btn-fechar-modal-update');
 function modalUpOnOff(){
    modalUpdate.classList.toggle('ativo');
    lblcount.textContent = 0;
-   txtTit.value = "";
-   txtDesc.value = "";
 }
 btnFecharModalUp.addEventListener('click', modalUpOnOff);
 btnUpdate.forEach((c)=>{
