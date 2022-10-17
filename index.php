@@ -51,13 +51,29 @@ include('db/connection.php');
             <div class="itens-header">
                 <div class="itens-acoes">
                     <a href="php/deleteItem.php?del_id_nota=<?php echo $row[0];?>"><i class="fa-solid fa-trash"></i></a>
-                    <a href="<?php $_SERVER['PHP_SELF'];?>?id=<?php echo $row[0];?>" class="btn-atualizar"><i class="fa-solid fa-pencil"></i></a>
+                    <a class="btn-atualizar"><i class="fa-solid fa-pencil"></i></a>
                 </div>
                 <div class="itens-data"><?php echo $row[3];?> • <?php echo $row[4];?></div>
             </div>
             <h1><?php echo $row[1];?></h1>
             <p><?php echo $row[2];?></p>
         </div>
+        <section class="modal-wrapper-update" id="section-update">
+            <article class="modal-box">
+                <button class="btn-fechar-modal-update"><i class="fa-solid fa-xmark"></i></button>
+                <form action="php/at.php" method="post">
+                    <input type="text" class="txt-id" disabled value="<?php echo $row[0];?>">
+                    <input name="txt-titulo" class="txt-titulo" type="text"  placeholder="Título" autocomplete="off" maxlength="16">
+                    <textarea name="txt-descricao" type="text" class="txt-descricao" placeholder="Suas notas" maxlength="150" autofocus="on"></textarea>
+                    <div class="counter-box">
+                        <p><label class="lbl-count"></label>/150</p>
+                    </div>
+                    <div class="box-acoes-modal">
+                        <button type="submit" class="btn-save-modal"><i class="fa-solid fa-floppy-disk"></i></button>
+                    </div>
+                </form>
+            </article>
+        </section>
         <?php } ?>
     </main>
     <section class="menu-stats">
@@ -69,22 +85,6 @@ include('db/connection.php');
         <article class="modal-box">
             <button class="btn-fechar-modal"><i class="fa-solid fa-xmark"></i></button>
             <form action="php/insertItem.php" method="post">
-                <input name="txt-titulo" class="txt-titulo" type="text"  placeholder="Título" autocomplete="off" maxlength="16">
-                <textarea name="txt-descricao" type="text" class="txt-descricao" placeholder="Suas notas" maxlength="150" autofocus="on"></textarea>
-                <div class="counter-box">
-                    <p><label class="lbl-count"></label>/150</p>
-                </div>
-                <div class="box-acoes-modal">
-                    <button type="submit" class="btn-save-modal"><i class="fa-solid fa-floppy-disk"></i></button>
-                </div>
-            </form>
-        </article>
-    </section>
-    <section class="modal-wrapper-update" id="section-update">
-        <article class="modal-box">
-            <button class="btn-fechar-modal-update"><i class="fa-solid fa-xmark"></i></button>
-            <form action="php/at.php" method="post">
-                <input type="number" class="txt-id" disabled value="">
                 <input name="txt-titulo" class="txt-titulo" type="text"  placeholder="Título" autocomplete="off" maxlength="16">
                 <textarea name="txt-descricao" type="text" class="txt-descricao" placeholder="Suas notas" maxlength="150" autofocus="on"></textarea>
                 <div class="counter-box">
