@@ -51,7 +51,10 @@ imgPerfil.addEventListener('mouseover', showMenu);
 const changeTheme = document.querySelector('#change-theme');
 function mudarTema(){
    const root = document.querySelector(':root');
-   root.classList.toggle('light');
-   root.classList.toggle('dark');
+   root.classList.toggle('theme-light');
+   root.classList.toggle('theme-dark');
+   const tema = root.classList;
+   localStorage.setItem('tema', JSON.stringify(tema));
+
 }
 changeTheme.addEventListener('click', mudarTema);

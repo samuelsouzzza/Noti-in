@@ -1,4 +1,7 @@
-:root.dark{
+:root{
+    font-size: 15px;
+}
+:root.theme-dark{
     --fundo-principal: #1D252C; 
     --fundo-principal-opaco: #1d252cd0;
     --fundo-secundario: #424547;
@@ -14,8 +17,8 @@
     --validacao1: #8BD199;
     --validacao2: #E27E78;
 }
-:root.light{
-   --fundo-principal: #d1d3d4; 
+:root.theme-light{
+   --fundo-principal: #eff1f1; 
    --fundo-principal-opaco: #d1d3d4d0;
    --fundo-secundario: #d9d9da;
    --neutra1: #24272a;
@@ -27,7 +30,7 @@
    --secundaria1: #DA70D6;
    --secundaria2: #FFD70D;
    --terciaria1: #A68C66;
-   --validacao1: #8BD199;
+   --validacao1: #258839;
    --validacao2: #E27E78;
 }
 *{
@@ -114,7 +117,7 @@ hr{
    max-width: 32px;
    max-height: 32px;
    border-radius: 50%;
-   border: 1px solid var(--neutra1);
+   /* border: 1px solid var(--neutra1); */
    margin-left: 5%;
    transition: 0.5s;
 }
@@ -152,7 +155,7 @@ main{
     transform: scale(0.95);
 }
 .fa-plus{
-    font-size: 50px;
+    font-size: 3.25em;
     align-self: center;
     justify-self: center;
     color: var(--primaria2);
@@ -160,7 +163,7 @@ main{
 .itens{
     background-color: var(--primaria1);
     color: var(--neutra1);
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: 5%;
     text-align: right;
     display: flex;
@@ -169,7 +172,7 @@ main{
     height: 100%;
     transition: 0.5s;
 }
-html.light .itens{
+html.theme-light .itens{
    color: var(--fundo-principal);
 }
 .itens:hover{
@@ -182,7 +185,7 @@ html.light .itens{
     align-items: center;
 }
 .itens-data{
-    font-size: 15px;
+    font-size: 0.85rem;
 }
 .itens-acoes{
     display: flex;
@@ -235,7 +238,7 @@ html.light .itens{
     width: auto;
     min-width: 400px;
     height: 50px;
-    font-size: 25px;
+    font-size: 1.5rem;
     padding: 10px;
     margin: 10px;
 }
@@ -262,7 +265,7 @@ body::-webkit-scrollbar-thumb, .txt-descricao::-webkit-scrollbar-thumb{
     position: absolute;
     top: -25px;
     left: 93%;
-    font-size: 35px;
+    font-size: 2.25rem;
     min-height: 50px;
     min-width: 50px;
     border-radius: 50%;
@@ -276,7 +279,7 @@ body::-webkit-scrollbar-thumb, .txt-descricao::-webkit-scrollbar-thumb{
     border: 1px solid var(--validacao2);
 }
 .counter-box{
-    font-size: 15px;
+    font-size: 1rem;
     color: var(--neutra1);
     width: 400px;
     display: flex;
@@ -296,7 +299,7 @@ body::-webkit-scrollbar-thumb, .txt-descricao::-webkit-scrollbar-thumb{
     background-color: transparent;
     min-width: 100px;
     min-height: 30px;
-    font-size: 30px;
+    font-size: 2rem;
     color: var(--neutra1);
     border: 1px solid var(--neutra3);
     transition: 0.5s;
@@ -308,7 +311,7 @@ body::-webkit-scrollbar-thumb, .txt-descricao::-webkit-scrollbar-thumb{
 .menu-stats{
     margin: 0 5% 15% 5%;
     color: var(--neutra1);
-    font-size: 15px;
+    font-size: 1rem;
     display: flex;
     justify-content: end;
 }
