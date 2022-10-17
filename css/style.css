@@ -15,12 +15,12 @@
     --validacao2: #E27E78;
 }
 :root.light{
-   --fundo-principal: #1D252C; 
-   --fundo-principal-opaco: #1d252cd0;
-   --fundo-secundario: #424547;
-   --neutra1: #B7C5D3;
-   --neutra2: #686969;
-   --neutra3: #b7c5d336;
+   --fundo-principal: #d1d3d4; 
+   --fundo-principal-opaco: #d1d3d4d0;
+   --fundo-secundario: #d9d9da;
+   --neutra1: #24272a;
+   --neutra2: #141414;
+   --neutra3: #24272a36;
    --primaria1: #008B94; 
    --primaria2: #33CED8;
    --primaria3: #68A1F0;
@@ -80,7 +80,6 @@ ul li{
    background-color: var(--fundo-principal);
    border: 1px solid var(--primaria2);
    min-width: 300px;
-   
    word-wrap: break-word;
    height: auto;
    position: absolute;
@@ -92,7 +91,6 @@ ul li{
 }
 hr{
    border-top: 1px solid var(--neutra2) 0 0 0;
-
 }
 .btn-logout, .btn-options{
    background-color: var(--fundo-principal);
@@ -167,9 +165,12 @@ main{
     text-align: right;
     display: flex;
     flex-direction: column;
-    word-break:keep-all;
+    word-break:break-all;
     height: 100%;
     transition: 0.5s;
+}
+html.light .itens{
+   color: var(--fundo-principal);
 }
 .itens:hover{
     background-color: var(--primaria2);
