@@ -10,5 +10,5 @@ $line = "UPDATE anotacoes SET titulo_notas = '$novoTitulo', descricao_notas = '$
 echo $line;
 mysqli_query($connect, $line);
 
-header('location: ../index.php');
+header('location: ../home.php');
 ?>

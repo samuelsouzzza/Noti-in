@@ -6,5 +6,5 @@
     $line = "DELETE FROM anotacoes WHERE id_notas = $del_item_id";
     $query = mysqli_query($connect, $line);
 
-    header('location: ../index.php');
+    header('location: ../home.php');
 ?>

@@ -10,7 +10,7 @@ $query = "INSERT INTO anotacoes (titulo_notas, descricao_notas, data_notas, hora
 mysqli_query($connect,$query);
     
 
-header('location: ../index.php');
+header('location: ../home.php');
 
 
 ?>

@@ -6,7 +6,7 @@ include('db/connection.php');
 ?>
 <!DOCTYPE html>
 <html lang="pt-br" class="theme-dark">
-    <head>
+    <head>  
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +33,7 @@ include('db/connection.php');
                   <li><a href="https://github.com/samuelsouzzza/bloco-de-notas.git" target="blank"><i class="fa fa-github"></i> Abrir no GitHub</a></li>
                   <hr>
                   <li><button class="btn-options">Opções</button></li>
-                  <li><button class="btn-logout">Sair</button></li>
+                  <li><button class="btn-logout"><a href="index.html">Sair</a></button></li>
                </ul>
             </div>
             <img src="imgs/Perfil.jpg" class="img-perfil" alt="foto-de-perfil">

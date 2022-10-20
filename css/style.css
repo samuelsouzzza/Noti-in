@@ -56,6 +56,9 @@ a, a:visited{
 header a:hover{
     color: var(--primaria2);
 }
+.btn-logout a:hover{
+    color: var(--fundo-principal);
+}
 header{
     display: flex;
     justify-content: space-between;
