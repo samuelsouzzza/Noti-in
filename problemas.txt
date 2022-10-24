@@ -1,3 +1,4 @@
 • id esta sobreescrevendo no editar
 • n ta puxando pelo id certo no editar
 • editar funciona em apenas um item
+• se não houver registros no banco, o menu suspenso nao funciona ???
