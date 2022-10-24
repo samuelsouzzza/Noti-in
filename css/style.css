@@ -37,6 +37,9 @@
     font-family: Ubuntu;
     text-decoration: none;
 }
+html.theme-light .itens{
+   color: var(--fundo-principal);
+}
 body{
     background-color: var(--fundo-principal);
 }
@@ -212,9 +215,6 @@ main{
     height: 100%;
     transition: 0.5s;
 }
-html.theme-light .itens{
-   color: var(--fundo-principal);
-}
 .itens:hover{
     background-color: var(--primaria2);
     color: var(--neutra2);
@@ -247,7 +247,7 @@ html.theme-light .itens{
     display: none;
 }
 .modal-wrapper.ativo, .modal-wrapper-update.ativo{
-    background-color: var(--fundo-principal-opaco);
+   background-color: var(--fundo-principal-opaco);
     position: fixed;
     display: flex;
     align-items: center;
@@ -258,7 +258,9 @@ html.theme-light .itens{
     height: 100vh;
 }
 .modal-box{
-    background-color: var(--fundo-principal);
+   background-color: transparent;
+   backdrop-filter: blur(13.5px);
+   -webkit-backdrop-filter: blur(13.5px);
     border: 1px solid var(--neutra1);
     min-width: auto;
     height: auto;
@@ -271,8 +273,10 @@ html.theme-light .itens{
     animation: fadein-modal-box 3s;
 }
 .txt-titulo, .txt-descricao, .txt-id-update, .txt-titulo-update, .txt-descricao-update{
+   backdrop-filter: blur(13.5px);
+   -webkit-backdrop-filter: blur(13.5px);
     display: block;
-    background-color: var(--fundo-principal);
+    background-color: transparent;
     border: 1px solid var(--neutra1);
     color: var(--neutra1);
     width: auto;
@@ -432,7 +436,6 @@ footer{
     animation: animate 25s linear infinite;
     bottom: -150px;
 }
-
 .circles li:nth-child(1){
     left: 25%;
     width: 80px;
@@ -498,8 +501,6 @@ footer{
     animation-delay: 0s;
     animation-duration: 11s;
 }
-
-
 @keyframes animate {
 
     0%{
