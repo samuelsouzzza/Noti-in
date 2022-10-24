@@ -27,11 +27,6 @@
    --primaria1: #008B94; 
    --primaria2: #33CED8;
    --primaria3: #68A1F0;
-   --secundaria1: #DA70D6;
-   --secundaria2: #FFD70D;
-   --terciaria1: #A68C66;
-   --validacao1: #258839;
-   --validacao2: #E27E78;
 }
 *{
     padding:0;
@@ -42,13 +37,11 @@
     font-family: Ubuntu;
     text-decoration: none;
 }
-
 body{
     background-color: var(--fundo-principal);
 }
 a{
     transition: 0.5s;
-    padding: 5px;
 }
 a, a:visited{
     color:unset;
@@ -148,7 +141,7 @@ hr{
    border: 1px solid var(--validacao2);
    color: var(--validacao2);
    padding: 3%;
-   min-width: 100%;
+   width: 100%;
    transition: .5s;
 }
 .btn-logout:hover, .btn-options:hover{
@@ -165,7 +158,6 @@ hr{
    max-width: 32px;
    max-height: 32px;
    border-radius: 50%;
-   /* border: 1px solid var(--neutra1); */
    margin-left: 5%;
    transition: 0.5s;
 }
