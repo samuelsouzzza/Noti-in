@@ -111,6 +111,9 @@ header{
 header .logo-wrapper{
     display: flex;
     align-items: center;
+    /* background-color: red;*/
+    position: relative;
+    z-index: 2;
 }
 ul li{
     list-style:none;
