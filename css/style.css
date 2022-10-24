@@ -61,6 +61,10 @@ a, a:visited{
     margin: 5% auto;
     padding: 50px;
     text-align: center;
+    position: relative;
+    z-index: 3;
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
 }
 .wrapper-login h2{
     margin: 5%;
@@ -411,10 +415,9 @@ footer{
     }
 }
 
-
-
+/*ANIMATION BACKGROUND*/
 .wrapper-background-animate-area{
-   background-color: var(--fundo-principal);  
+    background-color: var(--fundo-principal);  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
     height:100vh;
