@@ -33,7 +33,7 @@ include('db/connection.php');
                   <li><a href="https://github.com/samuelsouzzza/bloco-de-notas.git" target="blank"><i class="fa fa-github"></i> Abrir no GitHub</a></li>
                   <hr>
                   <li><button class="btn-options">Opções</button></li>
-                  <li><button class="btn-logout"><a href="index.html">Sair</a></button></li>
+                  <li><a href="index.html"><button class="btn-logout">Sair</button></a></li>
                </ul>
             </div>
             <img src="imgs/Perfil.jpg" class="img-perfil" alt="foto-de-perfil">
